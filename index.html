@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Correo Fleteo</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      padding: 20px;
+      background-color: #f0f0f0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #555;
+    }
+    h1 {
+      font-size: 25px;
+    }
+    h2 {
+      font-size: 21px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    a {
+      color: #555;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px dotted;
+    }
+    .container {
+      background-color: #FFF;
+      max-width: 560px;
+      padding: 20px;
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+    .header {
+      border: 1px solid #555;
+      border-radius: 2px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    .header__logo {
+      width: 100px;
+    }
+    .header__logo img {
+      width: 100%;
+      opacity: 0.7;
+    }
+
+    .network-icon {
+      text-decoration: none;
+      border-bottom: none;
+      color: #555;
+      display: block;
+      font-size: 30px;
+    }
+
+
+    main {
+      border: 1px solid #555;
+      border-radius: 2px;
+      margin-top: 20px;
+    }
+
+    .main__info {
+      background-color: #555;
+      color: white;
+      padding: 10px;
+    }
+    .details {
+      padding: 10px;
+    }
+    .details_and_button {
+      padding: 10px;
+    }
+
+    .details_and_button .button {
+      background-color: #555;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 10px 20px;
+      margin: 5px 0px;
+      border-radius: 2px;
+      display: inline-block;
+      transition: all 0.3s;
+    }
+
+    .details_and_button .button:hover {
+      background-color: #333;
+    }
+
+    .details_and_image {
+      padding: 10px;
+    }
+
+    .details-img {
+      width: auto;
+    }
+    .details-img img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #555;
+      color: white;
+      text-align: center;
+      font-size: 12px;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .footer {
+      border-radius: 2px;
+      color: white;
+      text-decoration: dotted;
+    }
+    .footer .support {
+      display: flex;
+      justify-content: center;
+    }
+    .support .whatsapp {
+      display: inline-block;
+      margin: 0 5px;
+    }
+    .support .email {
+      display: inline-block;
+      margin: 0 5px;
+    }
+    .support-icon {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      display: inline-block;
+    }
+    @media screen and (max-width: 425px) {
+      .header {
+        flex-direction: column ;
+      }
+      .header__logo {
+        margin: auto;
+      }
+      .header__networks {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .details_and_button .button {
+        display: block;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+        <picture class="header__logo">
+          <img src="https://fleteo.s3.amazonaws.com/logosvg.svg" alt="">
+        </picture>
+      <div class="header__networks">
+        <a class="network-icon" href="https://www.facebook.com/fleteo1">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a class="network-icon" href="https://twitter.com/fleteo">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a class="network-icon" href="https://github.com/hguzman">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="main__info">
+        <span>Queremos contarte que ya está disponible la información que solicitaste</span>
+      </div>
+
+      <div class="details">
+        <h1>Title big</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur <strong>adipisicing</strong> elit. Perspiciatis accusantium iure laborum perferendis corporis animi quam rerum, tempora suscipit quia eveniet reprehenderit possimus, maiores modi repudiandae. In voluptas sequi nesciunt!</p>
+      </div>
+
+      <div class="details_and_button">
+        <h2>Title medium</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis accusantium iure laborum perferendis corporis animi quam rerum, tempora suscipit quia eveniet reprehenderit possimus, maiores modi repudiandae. In voluptas sequi <a href="#" target="_blank" rel="nofollow">nesciunt</a>!</p>
+        <a class="button" href="#">Button example</a>
+      </div>
+
+      <div class="details_and_image">
+        <h3>Title small</h3>
+        <picture class="details-img">
+          <img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/contract_uy56.svg" alt="">
+        </picture>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, molestiae. Dolorem dolores provident sapiente amet inventore expedita id at? Voluptatum animi ipsum nesciunt nemo nihil? Similique vero voluptatibus nobis soluta.</p>
+      </div>
+
+
+    </main>
+
+    <footer>
+      <span>Copyright CarsOk S.A.S © 2018 - 2020</span>
+      <div class="support">
+        <div class="whatsapp">
+          <a href="https://api.whatsapp.com/send?phone=573002077707" class="support-icon"><i class="fa fa-whatsapp"></i></a>
+        </div>
+        <div class="email">
+          <a href="mailto:hguzman@carsok.co" class="support-icon"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://kit.fontawesome.com/bc8dc34fc7.js" crossorigin="anonymous"></script>
+</body>
+</html>
