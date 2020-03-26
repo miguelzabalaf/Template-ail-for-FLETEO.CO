@@ -1,2 +1,4 @@
 # Template-ail-for-FLETEO.CO
 I created the template that will be seen in the emails sent by FLETEO.CO
+
+Simple and light HTML template for displaying emails from Fleteo.co
